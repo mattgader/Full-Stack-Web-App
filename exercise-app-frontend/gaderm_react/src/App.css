@@ -1,0 +1,161 @@
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  margin: 5px;
+  padding: 10px;
+  height: 200vh;
+  width: 95%;
+}
+
+:root {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --light-color: #f5f4f3;
+  --medium-color1: #f53f3f;
+  --medium-color2: #f53f3f;
+  --dark-color: #451ba7;
+}
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform:rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: var(--light-color);
+  border: 2px var(--dark-color);
+  border-style: solid;
+  background-color: #c9b3ff;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+h1 { 
+  color: var(--medium-color1);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px var(--dark-color);
+}
+
+nav {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: var(--medium-color1);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 1px 1px var(--dark-color);
+  font-size: 200%;
+}
+
+p {
+  color: var(--medium-color2);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.link {
+  color: white; 
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 12px 15px;
+  background-color: var(--medium-color2);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  background: var(--light-color);
+  margin-top: 25px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+caption {
+  color: white;
+  background: rgb(172, 46, 46);
+  padding: 0.4rem;
+}
+
+tr {
+  color: var(--dark-color);
+}
+
+td {
+  border: 1px var(--dark-color);
+  border-style: solid;
+  border-color: lightblue;
+  color: var(--dark-color);
+  padding: 0.4rem;
+
+}
+
+th {
+  border: 1px var(--dark-color);
+  border-style: solid;
+  border-color: lightblue;
+  color: var(--dark-color);
+  background: rgb(252, 153, 153);
+  padding: 0.4rem;
+}
+
+input {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--dark-color);
+  border: 1px;
+  border-style: solid;
+  border-color: lightblue;
+  border-collapse: collapse;
+  padding: 0.4rem;
+
+}
+
+button {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--dark-color); 
+  background-color: white;
+  border: 1px var(--dark-color);
+  border-style: solid;
+  border-color: lightblue;
+  margin-top: 20px;
+  padding: 0.4rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+tr:nth-child(even){background-color: #dddbdb;}
+
+tr:hover {background-color: rgb(245, 145, 145);}
+
+footer {
+  font-size: 12px;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
